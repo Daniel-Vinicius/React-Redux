@@ -80,7 +80,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ---
 <a href="https://github.com/Daniel-Vinicius" style="text-decoration: none;">
-<img style="border-radius: 20px;" src="https://avatars0.githubusercontent.com/u/66279500?s=460&u=03d962bd1fda436ca49d4bbfbf2f30bdd566221d&v=4" width="100px;"  alt="Seu nome"/>
+<img style="border-radius: 70%;" src="https://avatars0.githubusercontent.com/u/66279500?s=460&u=03d962bd1fda436ca49d4bbfbf2f30bdd566221d&v=4" width="100px;"  alt="Seu nome"/>
 
 <br />
 <span> Feito com ❤️ por Daniel Vinícius 👋 Entre em contato! </span> 
