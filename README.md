@@ -7,7 +7,7 @@
 
 
 
-<h2 align="center">  <img alt="Imagem do Projeto" id="imagem" title="#Projeto" src="https://github.com/Seu-perfil/repositorio/.github/Imagem.JPG" />  </h2>
+<h2 align="center">  <img alt="Imagem do Projeto" id="imagem" title="#Projeto" src="https://github.com/Daniel-Vinicius/React-Redux/blob/main/.github/Imagem.JPG" />  </h2>
 
 ### Features 
 - [x] Redux
