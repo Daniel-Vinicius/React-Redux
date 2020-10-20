@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/license-MIT-green)
 ![](https://img.shields.io/badge/languege-Portuguese-yellow)
 [![GitHub stars](https://img.shields.io/github/stars/Daniel-Vinicius/React-Redux?style=social)](https://github.com/Daniel-Vinicius/React-Redux/stargazers)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5ad00f18-d110-454c-b863-20a2935654e1/deploy-status)](https://app.netlify.com/sites/react-redux-exemplo/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5ad00f18-d110-454c-b863-20a2935654e1/deploy-status)](https://react-redux-exemplo.netlify.app/)
 
 
 
