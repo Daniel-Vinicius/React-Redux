@@ -82,9 +82,11 @@ import configStore from './store/storeConfig'
 ```
 
 2- crie uma const que chama seu store
+
 `const store = configStore();`
 
 3- coloque o provider em volta de tudo e passe pra ele a propriedade chamada store com o valor
+
 ```
 ReactDOM.render(
 <Provider store={store}>
@@ -120,9 +122,11 @@ payload: novoNumero
 ---
 
 7- Agora em algum componente importe o connect
+
 `import { connect } from "react-redux";`
 
 8- importe o arquivo de actions e suas actions
+
 `import { alterarNumeroMinimo, alterarNumeroMáximo } from "../store/actions/numeros";`
 
 9- Crie uma função com este nome (por convenção)
