@@ -161,6 +161,10 @@ Esta função também pode ser escrita desta forma:
 const mapDispatchToProps = dispatch => bindActionCreators({selectTab}, dispatch)
 ```
 
+O bindActionCreators deve ser importado: 
+
+`import {bindActionCreators} from "redux"`
+
 Porém quando for usar, se usava assim: 
 
 ```
