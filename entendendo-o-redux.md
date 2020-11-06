@@ -151,6 +151,29 @@ dispatch(action);
 }
 ```
 
+Esta função também pode ser escrita desta forma: 
+
+```
+const mapDispatchToProps = dispatch => bindActionCreators({selectTab}, dispatch)
+```
+
+Porém quando for usar, se usava assim: 
+
+```
+props.alterarMin(numero) ou this.props.alterarMin(numero)
+```
+
+e agora usasse direto o método: 
+
+```
+  componentWillMount() {
+    this.props.selectTab('tabList')
+  }
+```
+
+como no exemplo acima
+
+
 ---
 
 10 - crie uma função com este nome por convenção
