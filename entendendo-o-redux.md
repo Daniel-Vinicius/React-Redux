@@ -243,8 +243,11 @@ export default storeConfig;
 
 15- Crie um arquivo em actions chamado constsActions e lá armazene todas os types em const dessa forma:
 
-`export const NUM_MIN_ALTERADO = 'NUM_MIN_ALTERADO'`
+`export const NUM_MIN_ALTERADO = 'NUM_MIN_ALTERADO'` e 
+
+
 `export const NUM_MAX_ALTERADO = 'NUM_MAX_ALTERADO'`
+
 
 Depois importe e use, isso diminiu a chance de erro
 
