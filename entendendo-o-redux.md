@@ -111,57 +111,82 @@ type: 'NUM_MIN_ALTERADO',
 payload: novoNumero
 }
 }
-```
 
 // novo numero seria o novo valor
 // type é um nome pra identificar qual action foi disparada
 // payload é o retorno da função, que agora pode ser chamado assim como no UseState comum.
+```
 
 ---
 
 7- Agora em algum componente importe o connect
-
 `import { connect } from "react-redux";`
 
 8- importe o arquivo de actions e suas actions
-
-import { alterarNumeroMinimo, alterarNumeroMáximo } from "../store/actions/numeros";
+`import { alterarNumeroMinimo, alterarNumeroMáximo } from "../store/actions/numeros";`
 
 9- Crie uma função com este nome (por convenção)
 
-function mapDispatchToProps(dispatch) { // criando função que exporta minha action para a store
+```
+function mapDispatchToProps(dispatch) {
+// criando função que exporta minha action para a store
+
 return {
-alterarMin(novoNumero) { // criando metodo que armazena numa const chamada action a função que criamos lá em actions e executa ela
+alterarMin(novoNumero) { 
 const action = alterarNumeroMinimo(novoNumero);
-dispatch(action); // o dispatch torna acessivel ao store sua action
+// criando metodo que armazena numa const chamada action a função que criamos lá em actions e executa ela
+
+dispatch(action); 
+// o dispatch torna acessivel ao store sua action
+
 },
-alterarMax(novoNumero) { // mesma coisa pra maximo
+
+alterarMax(novoNumero) {
 const action = alterarNumeroMáximo(novoNumero);
 dispatch(action);
 }
-};
+ // mesma coisa pra maximo
+
 }
+}
+```
+
+---
 
 10 - crie uma função com este nome por convenção
 
-function mapStateToProps(state) { // esta função pega o estado global e retorna de dentro dele o max e o min
+```
+function mapStateToProps(state) {
 return {
 max: state.numeros.max,
 min: state.numeros.min,
 };
 }
 
+// esta função pega o estado global e retorna de dentro dele o max e o min
+```
+
+---
+
 11- Exporte seu componente executando as funções criadas e usando o connect
 
-export default connect(mapStateToProps, mapDispatchToProps)(Intervalo);
+`export default connect(mapStateToProps, mapDispatchToProps)(Intervalo);`
+
+---
 
 12- pegue os valores de mapStateToProps de props
 
-const { min, max } = props;
+`const { min, max } = props;`
+
+---
 
 13- pode usar macho!
 
-          <input type='number' value={min} onChange={e => props.alterarMin(+e.target.value)}/>
+``
+         <input type='number' value={min} onChange={e => props.alterarMin(+e.target.value)}/>
+``
+
+---
 
 14- Abstraindo
 
