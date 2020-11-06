@@ -190,16 +190,20 @@ min: state.numeros.min,
 
 14- Abstraindo
 
-Crie uma pasta reducers em store
+Crie uma pasta reducers em store, depois copie o código do reducer e jogue lá
 
-depois copie o código do reducer e jogue lá
-
-const initialState = { // criando const que armazena o estado inicial
+```
+const initialState = {
 min: 0,
 max: 0,
 };
 
-export default function (state = initialState, action) { // inicializando reducer com o initialState
+// criando const que armazena o estado inicial
+
+
+export default function (state = initialState, action) { 
+// inicializando reducer com o initialState
+
 switch (action.type) {
 case "NUM_MIN_ALTERADO":
 return {
@@ -212,12 +216,15 @@ return {
 max: action.payload,
 };
 default:
-return state; // o default agora e o state
+return state; 
+// o default agora e o state
 }
 }
+```
 
 agora o arquivo de store é bem mais organizado
 
+```
 import {createStore, combineReducers} from 'redux'
 import numerosReducer from './reducers/numerosReducers'
 
@@ -230,28 +237,24 @@ return createStore(reducers)
 }
 
 export default storeConfig;
+```
 
-15- CRIE UM ARQUIVO EM ACTIONS CHAMADO constsActions e lá armazene todas os types em const dessa forma:
+---
 
-export const NUM_MIN_ALTERADO = 'NUM_MIN_ALTERADO'
-export const NUM_MAX_ALTERADO = 'NUM_MAX_ALTERADO'
+15- Crie um arquivo em actions chamado constsActions e lá armazene todas os types em const dessa forma:
+
+`export const NUM_MIN_ALTERADO = 'NUM_MIN_ALTERADO'`
+`export const NUM_MAX_ALTERADO = 'NUM_MAX_ALTERADO'`
 
 Depois importe e use, isso diminiu a chance de erro
 
-import {
-NUM_MIN_ALTERADO,
-NUM_MAX_ALTERADO
-} from './actionTypes'
+```
+import {NUM_MIN_ALTERADO, NUM_MAX_ALTERADO} from './actionTypes'
 
-import {
-NUM_MIN_ALTERADO,
-NUM_MAX_ALTERADO
-} from './actionTypes'
-
-export function alterarNumeroMinimo(novoNumero) { // novo numero seria o novo valor
+export function alterarNumeroMinimo(novoNumero) {
 return {
-type: NUM_MIN_ALTERADO, //type é um nome pra identificar qaul action foi disparada
-payload: novoNumero // payload é o novo valor
+type: NUM_MIN_ALTERADO,
+payload: novoNumero
 }
 }
 
@@ -261,3 +264,4 @@ type: NUM_MAX_ALTERADO,
 payload: novoNumero
 }
 }
+```
