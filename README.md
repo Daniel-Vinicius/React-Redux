@@ -12,7 +12,7 @@
 
 ### Features 
 - [x] Redux
-- [x] Responsivo
+- [x] Hospedado
 - [x] Convenções
 
 
